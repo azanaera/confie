@@ -1,0 +1,828 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+      "title": "Integration Gateway",
+      "version": "1.0"
+    },
+    "servers": [
+      {
+        "url": "/api"
+      }
+    ],
+    "security": [
+      {
+        "global": [
+          "groups"
+        ]
+      }
+    ],
+    "tags": [
+      {
+        "name": "/trexis/comparator/"
+      }
+    ],
+    "paths": {
+      "/trexis/comparator/quote": {
+        "post": {
+          "tags": [
+            "/trexis/comparator/"
+          ],
+          "operationId": "compositeQuoteAPI",
+          "requestBody": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/QuoteRequestDTO"
+                }
+              }
+            },
+            "required": true
+          },
+          "responses": {
+            "200": {
+              "description": "Output type",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/QuoteResponseDTO"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "components": {
+      "schemas": {
+        "QualificationDTO": {
+          "type": "object",
+          "properties": {
+            "question": {
+              "type": "string"
+            },
+            "answer": {
+              "type": "string"
+            }
+          }
+        },
+        "PriorPolicyReqDTO": {
+          "type": "object",
+          "properties": {
+            "carrier": {
+              "type": "string"
+            },
+            "numLosses": {
+              "type": "string"
+            },
+            "totalPremium": {
+              "type": "string"
+            },
+            "totalLosses": {
+              "type": "string"
+            }
+          }
+        },
+        "PriorPolicyDTO": {
+          "type": "object",
+          "properties": {
+            "PolicyCd": {
+              "type": "string"
+            },
+            "LOBCd": {
+              "type": "string"
+            },
+            "coverage": {
+              "$ref": "#/components/schemas/CoverageDTO"
+            }
+          }
+        },
+        "PolicyDTO": {
+          "type": "object",
+          "properties": {
+            "insured": {
+              "$ref": "#/components/schemas/ContactDTO"
+            },
+            "initialPrimaryLocation": {
+              "$ref": "#/components/schemas/AddressDTO"
+            },
+            "organizationType": {
+              "type": "string"
+            },
+            "agencyID": {
+              "type": "string"
+            },
+            "producerCode": {
+              "$ref": "#/components/schemas/ProducerCodeDTO"
+            },
+            "priorPolicy": {
+              "$ref": "#/components/schemas/PriorPolicyReqDTO"
+            },
+            "baseState": {
+              "type": "string"
+            },
+            "jobEffectiveDate": {
+              "type": "string"
+            },
+            "writtenDate": {
+              "type": "string"
+            },
+            "jobExpirationDate": {
+              "type": "string"
+            },
+            "numPriorLosses": {
+              "type": "string"
+            },
+            "line": {
+              "$ref": "#/components/schemas/PolicyLineDTO"
+            },
+            "qualificationAnswers": {
+              "type": "array",
+              "items": {
+                "$ref": "#/components/schemas/QualificationDTO"
+              }
+            },
+            "termType": {
+              "type": "string"
+            },
+            "docDelMethod": {
+              "type": "string"
+            },
+            "limits": {
+              "type": "string"
+            },
+            "mobileHome": {
+              "type": "string"
+            },
+            "noOfLapseDays": {
+              "type": "string"
+            },
+            "priorInsurance": {
+              "type": "string"
+            },
+            "homeOwners_Ext": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            },
+            "policyType": {
+              "type": "string"
+            },
+            "additionalNamedInsureds": {
+              "type": "array",
+              "items": {
+                "$ref": "#/components/schemas/ContactDTO"
+              }
+            },
+            "coverages": {
+              "type": "array",
+              "items": {
+                "$ref": "#/components/schemas/CoverageDTO"
+              }
+            }
+          }
+        },
+        "DriverDTO": {
+          "type": "object",
+          "properties": {
+            "contact": {
+              "$ref": "#/components/schemas/ContactDTO"
+            },
+            "driverType": {
+              "type": "string"
+            },
+            "licenseNumber": {
+              "type": "string"
+            },
+            "relationshipToInsured": {
+              "type": "string"
+            },
+            "licenseState": {
+              "type": "string"
+            },
+            "filingRequired": {
+              "type": "string"
+            },
+            "filingType": {
+              "type": "string"
+            },
+            "filingState": {
+              "type": "string"
+            },
+            "id": {
+              "type": "string"
+            },
+            "identificationType": {
+              "type": "string"
+            },
+            "licenseStatus": {
+              "type": "string"
+            },
+            "violations": {
+              "type": "array",
+              "items": {
+                "$ref": "#/components/schemas/ViolationDTO"
+              }
+            },
+            "seniorDriverDiscount": {
+              "type": "string"
+            },
+            "modifiers": {
+              "type": "array",
+              "items": {
+                "$ref": "#/components/schemas/ModifierDTO"
+              }
+            }
+          }
+        },
+        "QuoteInfoDTO": {
+          "type": "object",
+          "properties": {
+            "quotePreparedDT": {
+              "type": "string"
+            },
+            "summaryURL": {
+              "type": "string"
+            },
+            "bridgeURL": {
+              "type": "string"
+            }
+          }
+        },
+        "ProducerDTO": {
+          "type": "object",
+          "properties": {
+            "producer": {
+              "$ref": "#/components/schemas/ContactDTO"
+            },
+            "contractNumber": {
+              "type": "string"
+            },
+            "id": {
+              "type": "string"
+            }
+          }
+        },
+        "CoverageDTO": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "value": {
+              "type": "string"
+            },
+            "deductible": {
+              "type": "string"
+            },
+            "limit": {
+              "type": "string"
+            }
+          }
+        },
+        "OfficialIdDTO": {
+          "type": "object",
+          "properties": {
+            "type": {
+              "type": "string"
+            },
+            "value": {
+              "type": "string"
+            },
+            "state": {
+              "type": "string"
+            },
+            "id": {
+              "type": "string"
+            }
+          }
+        },
+        "LocationDTO": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "agencyId": {
+              "type": "string"
+            },
+            "address": {
+              "$ref": "#/components/schemas/AddressDTO"
+            }
+          }
+        },
+        "ViolationDTO": {
+          "type": "object",
+          "properties": {
+            "accidentViolationType": {
+              "type": "string"
+            },
+            "date": {
+              "type": "string"
+            },
+            "dispute": {
+              "type": "string"
+            },
+            "id": {
+              "type": "string"
+            }
+          }
+        },
+        "ProducerCodeDTO": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            }
+          }
+        },
+        "QuoteRequestDTO": {
+          "type": "object",
+          "properties": {
+            "policy": {
+              "$ref": "#/components/schemas/PolicyDTO"
+            },
+            "drivers": {
+              "type": "array",
+              "items": {
+                "$ref": "#/components/schemas/DriverDTO"
+              }
+            },
+            "vehicles": {
+              "type": "array",
+              "items": {
+                "$ref": "#/components/schemas/VehicleDTO"
+              }
+            }
+          }
+        },
+        "InstallmentDTO": {
+          "type": "object",
+          "properties": {
+            "installmentAmt": {
+              "type": "string"
+            },
+            "installmentFeeAmt": {
+              "type": "string"
+            },
+            "feeDesc": {
+              "type": "string"
+            }
+          }
+        },
+        "VehicleDTO": {
+          "type": "object",
+          "properties": {
+            "lienHolders": {
+              "type": "array",
+              "items": {
+                "$ref": "#/components/schemas/LienHoldersDTO"
+              }
+            },
+            "color": {
+              "type": "string"
+            },
+            "licensePlate": {
+              "type": "string"
+            },
+            "make": {
+              "type": "string"
+            },
+            "model": {
+              "type": "string"
+            },
+            "serialNumber": {
+              "type": "integer",
+              "format": "int32"
+            },
+            "state": {
+              "type": "string"
+            },
+            "bodyType": {
+              "type": "string"
+            },
+            "engineType": {
+              "type": "string"
+            },
+            "modelNotFound": {
+              "type": "string"
+            },
+            "vehHistDate": {
+              "type": "string"
+            },
+            "style": {
+              "type": "string"
+            },
+            "antiTheft": {
+              "type": "string"
+            },
+            "vin": {
+              "type": "string"
+            },
+            "vehicleStatus": {
+              "type": "string"
+            },
+            "VehicleFlag": {
+              "type": "string"
+            },
+            "primaryUse": {
+              "type": "string"
+            },
+            "VehicleMSRP": {
+              "type": "string"
+            },
+            "VehicleWeight": {
+              "type": "string"
+            },
+            "VehHistDate": {
+              "type": "string"
+            },
+            "VehHistScore": {
+              "type": "string"
+            },
+            "year": {
+              "type": "integer",
+              "format": "int32"
+            },
+            "coverage": {
+              "type": "array",
+              "items": {
+                "$ref": "#/components/schemas/CoverageDTO"
+              }
+            },
+            "garageLocation": {
+              "$ref": "#/components/schemas/AddressDTO"
+            },
+            "ratedDrivers": {
+              "type": "array",
+              "items": {
+                "$ref": "#/components/schemas/DriverDTO"
+              }
+            },
+            "modifiers": {
+              "type": "array",
+              "items": {
+                "$ref": "#/components/schemas/ModifierDTO"
+              }
+            },
+            "id": {
+              "type": "string"
+            }
+          }
+        },
+        "AddressDTO": {
+          "type": "object",
+          "properties": {
+            "addressLine1": {
+              "type": "string"
+            },
+            "addressLine2": {
+              "type": "string"
+            },
+            "addressLine3": {
+              "type": "string"
+            },
+            "addressType": {
+              "type": "string"
+            },
+            "city": {
+              "type": "string"
+            },
+            "cedex": {
+              "type": "boolean"
+            },
+            "cedexBureau": {
+              "type": "string"
+            },
+            "description": {
+              "type": "string"
+            },
+            "country": {
+              "type": "string"
+            },
+            "county": {
+              "type": "string"
+            },
+            "province": {
+              "type": "string"
+            },
+            "department": {
+              "type": "number"
+            },
+            "postalCode": {
+              "type": "string"
+            },
+            "state": {
+              "type": "string"
+            },
+            "validUntil": {
+              "type": "string"
+            },
+            "id": {
+              "type": "string"
+            }
+          }
+        },
+        "PaymentDTO": {
+          "type": "object",
+          "properties": {
+            "paymentOption": {
+              "type": "string"
+            },
+            "installment": {
+              "type": "array",
+              "items": {
+                "$ref": "#/components/schemas/InstallmentDTO"
+              }
+            },
+            "paymentPlanCd": {
+              "type": "string"
+            },
+            "methodPaymentCd": {
+              "type": "string"
+            },
+            "depositAmt": {
+              "type": "string"
+            },
+            "downPaymentPct": {
+              "type": "string"
+            },
+            "numPayments": {
+              "type": "string"
+            }
+          }
+        },
+        "ModifierDTO": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "id": {
+              "type": "string"
+            },
+            "booleanModifier": {
+              "type": "string"
+            }
+          }
+        },
+        "QuoteResponseDTO": {
+          "type": "object",
+          "properties": {
+            "producerInfo": {
+              "$ref": "#/components/schemas/ProducerDTO"
+            },
+            "policyInfo": {
+              "$ref": "#/components/schemas/PolicyInfoDTO"
+            },
+            "payment": {
+              "$ref": "#/components/schemas/PaymentDTO"
+            },
+            "coverage": {
+              "type": "array",
+              "items": {
+                "$ref": "#/components/schemas/CoverageDTO"
+              }
+            },
+            "drivers": {
+              "type": "array",
+              "items": {
+                "$ref": "#/components/schemas/DriverDTO"
+              }
+            },
+            "vehicles": {
+              "type": "array",
+              "items": {
+                "$ref": "#/components/schemas/VehicleDTO"
+              }
+            },
+            "location": {
+              "$ref": "#/components/schemas/LocationDTO"
+            },
+            "quoteInfo": {
+              "$ref": "#/components/schemas/QuoteInfoDTO"
+            }
+          }
+        },
+        "PolicyLineDTO": {
+          "type": "object",
+          "properties": {
+            "lobCd": {
+              "type": "string"
+            },
+            "nAICCd": {
+              "type": "string"
+            }
+          }
+        },
+        "ContactDTO": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "accountId": {
+              "type": "string"
+            },
+            "contactType": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            },
+            "firstName": {
+              "type": "string"
+            },
+            "lastName": {
+              "type": "string"
+            },
+            "dateOfBirth": {
+              "type": "string"
+            },
+            "middleName": {
+              "type": "string"
+            },
+            "primaryAddress": {
+              "$ref": "#/components/schemas/AddressDTO"
+            },
+            "vendorType": {
+              "type": "string"
+            },
+            "gender": {
+              "type": "string"
+            },
+            "maritalStatus": {
+              "type": "string"
+            },
+            "prefix": {
+              "type": "string"
+            },
+            "suffix": {
+              "type": "string"
+            },
+            "emailAddress1": {
+              "type": "string"
+            },
+            "emailAddress2": {
+              "type": "string"
+            },
+            "faxPhoneCountry": {
+              "type": "string"
+            },
+            "faxPhone": {
+              "type": "string"
+            },
+            "faxPhoneExtension": {
+              "type": "string"
+            },
+            "homePhoneCountry": {
+              "type": "string"
+            },
+            "homePhone": {
+              "type": "string"
+            },
+            "homePhoneExtension": {
+              "type": "string"
+            },
+            "preferred": {
+              "type": "boolean"
+            },
+            "preferredCurrency": {
+              "type": "string"
+            },
+            "primaryLanguage": {
+              "type": "string"
+            },
+            "primaryPhone": {
+              "type": "string"
+            },
+            "taxID": {
+              "type": "string"
+            },
+            "workPhoneCountry": {
+              "type": "string"
+            },
+            "workPhone": {
+              "type": "string"
+            },
+            "workPhoneExtension": {
+              "type": "string"
+            },
+            "cellPhone": {
+              "type": "string"
+            },
+            "w9Received": {
+              "type": "boolean"
+            },
+            "w9ReceivedDate": {
+              "type": "string"
+            },
+            "occupation": {
+              "type": "string"
+            },
+            "w9ValidFrom": {
+              "type": "string"
+            },
+            "w9ValidTo": {
+              "type": "string"
+            },
+            "withholdingRate": {
+              "type": "number"
+            },
+            "allAddresses": {
+              "type": "array",
+              "items": {
+                "$ref": "#/components/schemas/AddressDTO"
+              }
+            },
+            "officialIds": {
+              "type": "array",
+              "items": {
+                "$ref": "#/components/schemas/OfficialIdDTO"
+              }
+            },
+            "occupationCd": {
+              "type": "string"
+            },
+            "occupationDesc": {
+              "type": "string"
+            }
+          }
+        },
+        "LienHoldersDTO": {
+          "type": "object",
+          "properties": {
+            "contact": {
+              "$ref": "#/components/schemas/ContactDTO"
+            },
+            "id": {
+              "type": "string"
+            },
+            "LienType": {
+              "type": "string"
+            }
+          }
+        },
+        "PolicyInfoDTO": {
+          "type": "object",
+          "properties": {
+            "lobCd": {
+              "type": "string"
+            },
+            "nAICCd": {
+              "type": "string"
+            },
+            "priorPolicy": {
+              "$ref": "#/components/schemas/PriorPolicyDTO"
+            },
+            "payment": {
+              "$ref": "#/components/schemas/PaymentDTO"
+            },
+            "PolicyStatusCd": {
+              "type": "string"
+            },
+            "insured": {
+              "$ref": "#/components/schemas/ContactDTO"
+            },
+            "documentDeliveryMethod": {
+              "type": "string"
+            },
+            "coverages": {
+              "type": "array",
+              "items": {
+                "$ref": "#/components/schemas/CoverageDTO"
+              }
+            },
+            "drivers": {
+              "type": "array",
+              "items": {
+                "$ref": "#/components/schemas/DriverDTO"
+              }
+            },
+            "vehicles": {
+              "type": "array",
+              "items": {
+                "$ref": "#/components/schemas/VehicleDTO"
+              }
+            }
+          }
+        }
+      },
+      "securitySchemes": {
+        "global": {
+          "type": "oauth2",
+          "flows": {
+            "authorizationCode": {
+              "authorizationUrl": "https://guidewire-hub.oktapreview.com/oauth2/ausj9ftnbxOqfGU4U0h7/v1/authorize",
+              "tokenUrl": "https://guidewire-hub.oktapreview.com/oauth2/ausj9ftnbxOqfGU4U0h7/v1/token",
+              "scopes": {
+                "groups": "Required scopes for Camel REST APIs"
+              }
+            }
+          }
+        }
+      }
+    }
+  }

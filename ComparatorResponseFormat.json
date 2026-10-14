@@ -1,0 +1,1033 @@
+{
+    "producerInfo": {
+      "producer": {
+        "id": "string",
+        "accountId": "string",
+        "contactType": "string",
+        "name": "string",
+        "firstName": "string",
+        "lastName": "string",
+        "dateOfBirth": "string",
+        "middleName": "string",
+        "primaryAddress": {
+          "addressLine1": "string",
+          "addressLine2": "string",
+          "addressLine3": "string",
+          "addressType": "string",
+          "city": "string",
+          "cedex": true,
+          "cedexBureau": "string",
+          "description": "string",
+          "country": "string",
+          "county": "string",
+          "province": "string",
+          "department": 0,
+          "postalCode": "string",
+          "state": "string",
+          "validUntil": "string",
+          "id": "string"
+        },
+        "vendorType": "string",
+        "gender": "string",
+        "maritalStatus": "string",
+        "prefix": "string",
+        "suffix": "string",
+        "emailAddress1": "string",
+        "emailAddress2": "string",
+        "faxPhoneCountry": "string",
+        "faxPhone": "string",
+        "faxPhoneExtension": "string",
+        "homePhoneCountry": "string",
+        "homePhone": "string",
+        "homePhoneExtension": "string",
+        "preferred": true,
+        "preferredCurrency": "string",
+        "primaryLanguage": "string",
+        "primaryPhone": "string",
+        "taxID": "string",
+        "workPhoneCountry": "string",
+        "workPhone": "string",
+        "workPhoneExtension": "string",
+        "cellPhone": "string",
+        "w9Received": true,
+        "w9ReceivedDate": "string",
+        "occupation": "string",
+        "w9ValidFrom": "string",
+        "w9ValidTo": "string",
+        "withholdingRate": 0,
+        "allAddresses": [
+          {
+            "addressLine1": "string",
+            "addressLine2": "string",
+            "addressLine3": "string",
+            "addressType": "string",
+            "city": "string",
+            "cedex": true,
+            "cedexBureau": "string",
+            "description": "string",
+            "country": "string",
+            "county": "string",
+            "province": "string",
+            "department": 0,
+            "postalCode": "string",
+            "state": "string",
+            "validUntil": "string",
+            "id": "string"
+          }
+        ],
+        "officialIds": [
+          {
+            "type": "string",
+            "value": "string",
+            "state": "string",
+            "id": "string"
+          }
+        ],
+        "occupationCd": "string",
+        "occupationDesc": "string"
+      },
+      "contractNumber": "string",
+      "id": "string"
+    },
+    "policyInfo": {
+      "lobCd": "string",
+      "nAICCd": "string",
+      "priorPolicy": {
+        "PolicyCd": "string",
+        "LOBCd": "string",
+        "coverage": {
+          "name": "string",
+          "value": "string",
+          "deductible": "string",
+          "limit": "string"
+        }
+      },
+      "payment": {
+        "paymentOption": "string",
+        "installment": [
+          {
+            "installmentAmt": "string",
+            "installmentFeeAmt": "string",
+            "feeDesc": "string"
+          }
+        ],
+        "paymentPlanCd": "string",
+        "methodPaymentCd": "string",
+        "depositAmt": "string",
+        "downPaymentPct": "string",
+        "numPayments": "string"
+      },
+      "PolicyStatusCd": "string",
+      "insured": {
+        "id": "string",
+        "accountId": "string",
+        "contactType": "string",
+        "name": "string",
+        "firstName": "string",
+        "lastName": "string",
+        "dateOfBirth": "string",
+        "middleName": "string",
+        "primaryAddress": {
+          "addressLine1": "string",
+          "addressLine2": "string",
+          "addressLine3": "string",
+          "addressType": "string",
+          "city": "string",
+          "cedex": true,
+          "cedexBureau": "string",
+          "description": "string",
+          "country": "string",
+          "county": "string",
+          "province": "string",
+          "department": 0,
+          "postalCode": "string",
+          "state": "string",
+          "validUntil": "string",
+          "id": "string"
+        },
+        "vendorType": "string",
+        "gender": "string",
+        "maritalStatus": "string",
+        "prefix": "string",
+        "suffix": "string",
+        "emailAddress1": "string",
+        "emailAddress2": "string",
+        "faxPhoneCountry": "string",
+        "faxPhone": "string",
+        "faxPhoneExtension": "string",
+        "homePhoneCountry": "string",
+        "homePhone": "string",
+        "homePhoneExtension": "string",
+        "preferred": true,
+        "preferredCurrency": "string",
+        "primaryLanguage": "string",
+        "primaryPhone": "string",
+        "taxID": "string",
+        "workPhoneCountry": "string",
+        "workPhone": "string",
+        "workPhoneExtension": "string",
+        "cellPhone": "string",
+        "w9Received": true,
+        "w9ReceivedDate": "string",
+        "occupation": "string",
+        "w9ValidFrom": "string",
+        "w9ValidTo": "string",
+        "withholdingRate": 0,
+        "allAddresses": [
+          {
+            "addressLine1": "string",
+            "addressLine2": "string",
+            "addressLine3": "string",
+            "addressType": "string",
+            "city": "string",
+            "cedex": true,
+            "cedexBureau": "string",
+            "description": "string",
+            "country": "string",
+            "county": "string",
+            "province": "string",
+            "department": 0,
+            "postalCode": "string",
+            "state": "string",
+            "validUntil": "string",
+            "id": "string"
+          }
+        ],
+        "officialIds": [
+          {
+            "type": "string",
+            "value": "string",
+            "state": "string",
+            "id": "string"
+          }
+        ],
+        "occupationCd": "string",
+        "occupationDesc": "string"
+      },
+      "documentDeliveryMethod": "string",
+      "coverages": [
+        {
+          "name": "string",
+          "value": "string",
+          "deductible": "string",
+          "limit": "string"
+        }
+      ],
+      "drivers": [
+        {
+          "contact": {
+            "id": "string",
+            "accountId": "string",
+            "contactType": "string",
+            "name": "string",
+            "firstName": "string",
+            "lastName": "string",
+            "dateOfBirth": "string",
+            "middleName": "string",
+            "primaryAddress": {
+              "addressLine1": "string",
+              "addressLine2": "string",
+              "addressLine3": "string",
+              "addressType": "string",
+              "city": "string",
+              "cedex": true,
+              "cedexBureau": "string",
+              "description": "string",
+              "country": "string",
+              "county": "string",
+              "province": "string",
+              "department": 0,
+              "postalCode": "string",
+              "state": "string",
+              "validUntil": "string",
+              "id": "string"
+            },
+            "vendorType": "string",
+            "gender": "string",
+            "maritalStatus": "string",
+            "prefix": "string",
+            "suffix": "string",
+            "emailAddress1": "string",
+            "emailAddress2": "string",
+            "faxPhoneCountry": "string",
+            "faxPhone": "string",
+            "faxPhoneExtension": "string",
+            "homePhoneCountry": "string",
+            "homePhone": "string",
+            "homePhoneExtension": "string",
+            "preferred": true,
+            "preferredCurrency": "string",
+            "primaryLanguage": "string",
+            "primaryPhone": "string",
+            "taxID": "string",
+            "workPhoneCountry": "string",
+            "workPhone": "string",
+            "workPhoneExtension": "string",
+            "cellPhone": "string",
+            "w9Received": true,
+            "w9ReceivedDate": "string",
+            "occupation": "string",
+            "w9ValidFrom": "string",
+            "w9ValidTo": "string",
+            "withholdingRate": 0,
+            "allAddresses": [
+              {
+                "addressLine1": "string",
+                "addressLine2": "string",
+                "addressLine3": "string",
+                "addressType": "string",
+                "city": "string",
+                "cedex": true,
+                "cedexBureau": "string",
+                "description": "string",
+                "country": "string",
+                "county": "string",
+                "province": "string",
+                "department": 0,
+                "postalCode": "string",
+                "state": "string",
+                "validUntil": "string",
+                "id": "string"
+              }
+            ],
+            "officialIds": [
+              {
+                "type": "string",
+                "value": "string",
+                "state": "string",
+                "id": "string"
+              }
+            ],
+            "occupationCd": "string",
+            "occupationDesc": "string"
+          },
+          "driverType": "string",
+          "licenseNumber": "string",
+          "relationshipToInsured": "string",
+          "licenseState": "string",
+          "filingRequired": "string",
+          "filingType": "string",
+          "filingState": "string",
+          "id": "string",
+          "identificationType": "string",
+          "licenseStatus": "string",
+          "violations": [
+            {
+              "accidentViolationType": "string",
+              "date": "string",
+              "dispute": "string",
+              "id": "string"
+            }
+          ],
+          "seniorDriverDiscount": "string",
+          "modifiers": [
+            {
+              "name": "string",
+              "id": "string",
+              "booleanModifier": "string"
+            }
+          ]
+        }
+      ],
+      "vehicles": [
+        {
+          "lienHolders": [
+            {
+              "contact": {
+                "id": "string",
+                "accountId": "string",
+                "contactType": "string",
+                "name": "string",
+                "firstName": "string",
+                "lastName": "string",
+                "dateOfBirth": "string",
+                "middleName": "string",
+                "primaryAddress": {
+                  "addressLine1": "string",
+                  "addressLine2": "string",
+                  "addressLine3": "string",
+                  "addressType": "string",
+                  "city": "string",
+                  "cedex": true,
+                  "cedexBureau": "string",
+                  "description": "string",
+                  "country": "string",
+                  "county": "string",
+                  "province": "string",
+                  "department": 0,
+                  "postalCode": "string",
+                  "state": "string",
+                  "validUntil": "string",
+                  "id": "string"
+                },
+                "vendorType": "string",
+                "gender": "string",
+                "maritalStatus": "string",
+                "prefix": "string",
+                "suffix": "string",
+                "emailAddress1": "string",
+                "emailAddress2": "string",
+                "faxPhoneCountry": "string",
+                "faxPhone": "string",
+                "faxPhoneExtension": "string",
+                "homePhoneCountry": "string",
+                "homePhone": "string",
+                "homePhoneExtension": "string",
+                "preferred": true,
+                "preferredCurrency": "string",
+                "primaryLanguage": "string",
+                "primaryPhone": "string",
+                "taxID": "string",
+                "workPhoneCountry": "string",
+                "workPhone": "string",
+                "workPhoneExtension": "string",
+                "cellPhone": "string",
+                "w9Received": true,
+                "w9ReceivedDate": "string",
+                "occupation": "string",
+                "w9ValidFrom": "string",
+                "w9ValidTo": "string",
+                "withholdingRate": 0,
+                "allAddresses": [
+                  {
+                    "addressLine1": "string",
+                    "addressLine2": "string",
+                    "addressLine3": "string",
+                    "addressType": "string",
+                    "city": "string",
+                    "cedex": true,
+                    "cedexBureau": "string",
+                    "description": "string",
+                    "country": "string",
+                    "county": "string",
+                    "province": "string",
+                    "department": 0,
+                    "postalCode": "string",
+                    "state": "string",
+                    "validUntil": "string",
+                    "id": "string"
+                  }
+                ],
+                "officialIds": [
+                  {
+                    "type": "string",
+                    "value": "string",
+                    "state": "string",
+                    "id": "string"
+                  }
+                ],
+                "occupationCd": "string",
+                "occupationDesc": "string"
+              },
+              "id": "string",
+              "LienType": "string"
+            }
+          ],
+          "color": "string",
+          "licensePlate": "string",
+          "make": "string",
+          "model": "string",
+          "serialNumber": 0,
+          "state": "string",
+          "bodyType": "string",
+          "engineType": "string",
+          "modelNotFound": "string",
+          "vehHistDate": "string",
+          "style": "string",
+          "antiTheft": "string",
+          "vin": "string",
+          "vehicleStatus": "string",
+          "VehicleFlag": "string",
+          "primaryUse": "string",
+          "VehicleMSRP": "string",
+          "VehicleWeight": "string",
+          "VehHistDate": "string",
+          "VehHistScore": "string",
+          "year": 0,
+          "coverage": [
+            {
+              "name": "string",
+              "value": "string",
+              "deductible": "string",
+              "limit": "string"
+            }
+          ],
+          "garageLocation": {
+            "addressLine1": "string",
+            "addressLine2": "string",
+            "addressLine3": "string",
+            "addressType": "string",
+            "city": "string",
+            "cedex": true,
+            "cedexBureau": "string",
+            "description": "string",
+            "country": "string",
+            "county": "string",
+            "province": "string",
+            "department": 0,
+            "postalCode": "string",
+            "state": "string",
+            "validUntil": "string",
+            "id": "string"
+          },
+          "ratedDrivers": [
+            {
+              "contact": {
+                "id": "string",
+                "accountId": "string",
+                "contactType": "string",
+                "name": "string",
+                "firstName": "string",
+                "lastName": "string",
+                "dateOfBirth": "string",
+                "middleName": "string",
+                "primaryAddress": {
+                  "addressLine1": "string",
+                  "addressLine2": "string",
+                  "addressLine3": "string",
+                  "addressType": "string",
+                  "city": "string",
+                  "cedex": true,
+                  "cedexBureau": "string",
+                  "description": "string",
+                  "country": "string",
+                  "county": "string",
+                  "province": "string",
+                  "department": 0,
+                  "postalCode": "string",
+                  "state": "string",
+                  "validUntil": "string",
+                  "id": "string"
+                },
+                "vendorType": "string",
+                "gender": "string",
+                "maritalStatus": "string",
+                "prefix": "string",
+                "suffix": "string",
+                "emailAddress1": "string",
+                "emailAddress2": "string",
+                "faxPhoneCountry": "string",
+                "faxPhone": "string",
+                "faxPhoneExtension": "string",
+                "homePhoneCountry": "string",
+                "homePhone": "string",
+                "homePhoneExtension": "string",
+                "preferred": true,
+                "preferredCurrency": "string",
+                "primaryLanguage": "string",
+                "primaryPhone": "string",
+                "taxID": "string",
+                "workPhoneCountry": "string",
+                "workPhone": "string",
+                "workPhoneExtension": "string",
+                "cellPhone": "string",
+                "w9Received": true,
+                "w9ReceivedDate": "string",
+                "occupation": "string",
+                "w9ValidFrom": "string",
+                "w9ValidTo": "string",
+                "withholdingRate": 0,
+                "allAddresses": [
+                  {
+                    "addressLine1": "string",
+                    "addressLine2": "string",
+                    "addressLine3": "string",
+                    "addressType": "string",
+                    "city": "string",
+                    "cedex": true,
+                    "cedexBureau": "string",
+                    "description": "string",
+                    "country": "string",
+                    "county": "string",
+                    "province": "string",
+                    "department": 0,
+                    "postalCode": "string",
+                    "state": "string",
+                    "validUntil": "string",
+                    "id": "string"
+                  }
+                ],
+                "officialIds": [
+                  {
+                    "type": "string",
+                    "value": "string",
+                    "state": "string",
+                    "id": "string"
+                  }
+                ],
+                "occupationCd": "string",
+                "occupationDesc": "string"
+              },
+              "driverType": "string",
+              "licenseNumber": "string",
+              "relationshipToInsured": "string",
+              "licenseState": "string",
+              "filingRequired": "string",
+              "filingType": "string",
+              "filingState": "string",
+              "id": "string",
+              "identificationType": "string",
+              "licenseStatus": "string",
+              "violations": [
+                {
+                  "accidentViolationType": "string",
+                  "date": "string",
+                  "dispute": "string",
+                  "id": "string"
+                }
+              ],
+              "seniorDriverDiscount": "string",
+              "modifiers": [
+                {
+                  "name": "string",
+                  "id": "string",
+                  "booleanModifier": "string"
+                }
+              ]
+            }
+          ],
+          "modifiers": [
+            {
+              "name": "string",
+              "id": "string",
+              "booleanModifier": "string"
+            }
+          ],
+          "id": "string"
+        }
+      ]
+    },
+    "payment": {
+      "paymentOption": "string",
+      "installment": [
+        {
+          "installmentAmt": "string",
+          "installmentFeeAmt": "string",
+          "feeDesc": "string"
+        }
+      ],
+      "paymentPlanCd": "string",
+      "methodPaymentCd": "string",
+      "depositAmt": "string",
+      "downPaymentPct": "string",
+      "numPayments": "string"
+    },
+    "coverage": [
+      {
+        "name": "string",
+        "value": "string",
+        "deductible": "string",
+        "limit": "string"
+      }
+    ],
+    "drivers": [
+      {
+        "contact": {
+          "id": "string",
+          "accountId": "string",
+          "contactType": "string",
+          "name": "string",
+          "firstName": "string",
+          "lastName": "string",
+          "dateOfBirth": "string",
+          "middleName": "string",
+          "primaryAddress": {
+            "addressLine1": "string",
+            "addressLine2": "string",
+            "addressLine3": "string",
+            "addressType": "string",
+            "city": "string",
+            "cedex": true,
+            "cedexBureau": "string",
+            "description": "string",
+            "country": "string",
+            "county": "string",
+            "province": "string",
+            "department": 0,
+            "postalCode": "string",
+            "state": "string",
+            "validUntil": "string",
+            "id": "string"
+          },
+          "vendorType": "string",
+          "gender": "string",
+          "maritalStatus": "string",
+          "prefix": "string",
+          "suffix": "string",
+          "emailAddress1": "string",
+          "emailAddress2": "string",
+          "faxPhoneCountry": "string",
+          "faxPhone": "string",
+          "faxPhoneExtension": "string",
+          "homePhoneCountry": "string",
+          "homePhone": "string",
+          "homePhoneExtension": "string",
+          "preferred": true,
+          "preferredCurrency": "string",
+          "primaryLanguage": "string",
+          "primaryPhone": "string",
+          "taxID": "string",
+          "workPhoneCountry": "string",
+          "workPhone": "string",
+          "workPhoneExtension": "string",
+          "cellPhone": "string",
+          "w9Received": true,
+          "w9ReceivedDate": "string",
+          "occupation": "string",
+          "w9ValidFrom": "string",
+          "w9ValidTo": "string",
+          "withholdingRate": 0,
+          "allAddresses": [
+            {
+              "addressLine1": "string",
+              "addressLine2": "string",
+              "addressLine3": "string",
+              "addressType": "string",
+              "city": "string",
+              "cedex": true,
+              "cedexBureau": "string",
+              "description": "string",
+              "country": "string",
+              "county": "string",
+              "province": "string",
+              "department": 0,
+              "postalCode": "string",
+              "state": "string",
+              "validUntil": "string",
+              "id": "string"
+            }
+          ],
+          "officialIds": [
+            {
+              "type": "string",
+              "value": "string",
+              "state": "string",
+              "id": "string"
+            }
+          ],
+          "occupationCd": "string",
+          "occupationDesc": "string"
+        },
+        "driverType": "string",
+        "licenseNumber": "string",
+        "relationshipToInsured": "string",
+        "licenseState": "string",
+        "filingRequired": "string",
+        "filingType": "string",
+        "filingState": "string",
+        "id": "string",
+        "identificationType": "string",
+        "licenseStatus": "string",
+        "violations": [
+          {
+            "accidentViolationType": "string",
+            "date": "string",
+            "dispute": "string",
+            "id": "string"
+          }
+        ],
+        "seniorDriverDiscount": "string",
+        "modifiers": [
+          {
+            "name": "string",
+            "id": "string",
+            "booleanModifier": "string"
+          }
+        ]
+      }
+    ],
+    "vehicles": [
+      {
+        "lienHolders": [
+          {
+            "contact": {
+              "id": "string",
+              "accountId": "string",
+              "contactType": "string",
+              "name": "string",
+              "firstName": "string",
+              "lastName": "string",
+              "dateOfBirth": "string",
+              "middleName": "string",
+              "primaryAddress": {
+                "addressLine1": "string",
+                "addressLine2": "string",
+                "addressLine3": "string",
+                "addressType": "string",
+                "city": "string",
+                "cedex": true,
+                "cedexBureau": "string",
+                "description": "string",
+                "country": "string",
+                "county": "string",
+                "province": "string",
+                "department": 0,
+                "postalCode": "string",
+                "state": "string",
+                "validUntil": "string",
+                "id": "string"
+              },
+              "vendorType": "string",
+              "gender": "string",
+              "maritalStatus": "string",
+              "prefix": "string",
+              "suffix": "string",
+              "emailAddress1": "string",
+              "emailAddress2": "string",
+              "faxPhoneCountry": "string",
+              "faxPhone": "string",
+              "faxPhoneExtension": "string",
+              "homePhoneCountry": "string",
+              "homePhone": "string",
+              "homePhoneExtension": "string",
+              "preferred": true,
+              "preferredCurrency": "string",
+              "primaryLanguage": "string",
+              "primaryPhone": "string",
+              "taxID": "string",
+              "workPhoneCountry": "string",
+              "workPhone": "string",
+              "workPhoneExtension": "string",
+              "cellPhone": "string",
+              "w9Received": true,
+              "w9ReceivedDate": "string",
+              "occupation": "string",
+              "w9ValidFrom": "string",
+              "w9ValidTo": "string",
+              "withholdingRate": 0,
+              "allAddresses": [
+                {
+                  "addressLine1": "string",
+                  "addressLine2": "string",
+                  "addressLine3": "string",
+                  "addressType": "string",
+                  "city": "string",
+                  "cedex": true,
+                  "cedexBureau": "string",
+                  "description": "string",
+                  "country": "string",
+                  "county": "string",
+                  "province": "string",
+                  "department": 0,
+                  "postalCode": "string",
+                  "state": "string",
+                  "validUntil": "string",
+                  "id": "string"
+                }
+              ],
+              "officialIds": [
+                {
+                  "type": "string",
+                  "value": "string",
+                  "state": "string",
+                  "id": "string"
+                }
+              ],
+              "occupationCd": "string",
+              "occupationDesc": "string"
+            },
+            "id": "string",
+            "LienType": "string"
+          }
+        ],
+        "color": "string",
+        "licensePlate": "string",
+        "make": "string",
+        "model": "string",
+        "serialNumber": 0,
+        "state": "string",
+        "bodyType": "string",
+        "engineType": "string",
+        "modelNotFound": "string",
+        "vehHistDate": "string",
+        "style": "string",
+        "antiTheft": "string",
+        "vin": "string",
+        "vehicleStatus": "string",
+        "VehicleFlag": "string",
+        "primaryUse": "string",
+        "VehicleMSRP": "string",
+        "VehicleWeight": "string",
+        "VehHistDate": "string",
+        "VehHistScore": "string",
+        "year": 0,
+        "coverage": [
+          {
+            "name": "string",
+            "value": "string",
+            "deductible": "string",
+            "limit": "string"
+          }
+        ],
+        "garageLocation": {
+          "addressLine1": "string",
+          "addressLine2": "string",
+          "addressLine3": "string",
+          "addressType": "string",
+          "city": "string",
+          "cedex": true,
+          "cedexBureau": "string",
+          "description": "string",
+          "country": "string",
+          "county": "string",
+          "province": "string",
+          "department": 0,
+          "postalCode": "string",
+          "state": "string",
+          "validUntil": "string",
+          "id": "string"
+        },
+        "ratedDrivers": [
+          {
+            "contact": {
+              "id": "string",
+              "accountId": "string",
+              "contactType": "string",
+              "name": "string",
+              "firstName": "string",
+              "lastName": "string",
+              "dateOfBirth": "string",
+              "middleName": "string",
+              "primaryAddress": {
+                "addressLine1": "string",
+                "addressLine2": "string",
+                "addressLine3": "string",
+                "addressType": "string",
+                "city": "string",
+                "cedex": true,
+                "cedexBureau": "string",
+                "description": "string",
+                "country": "string",
+                "county": "string",
+                "province": "string",
+                "department": 0,
+                "postalCode": "string",
+                "state": "string",
+                "validUntil": "string",
+                "id": "string"
+              },
+              "vendorType": "string",
+              "gender": "string",
+              "maritalStatus": "string",
+              "prefix": "string",
+              "suffix": "string",
+              "emailAddress1": "string",
+              "emailAddress2": "string",
+              "faxPhoneCountry": "string",
+              "faxPhone": "string",
+              "faxPhoneExtension": "string",
+              "homePhoneCountry": "string",
+              "homePhone": "string",
+              "homePhoneExtension": "string",
+              "preferred": true,
+              "preferredCurrency": "string",
+              "primaryLanguage": "string",
+              "primaryPhone": "string",
+              "taxID": "string",
+              "workPhoneCountry": "string",
+              "workPhone": "string",
+              "workPhoneExtension": "string",
+              "cellPhone": "string",
+              "w9Received": true,
+              "w9ReceivedDate": "string",
+              "occupation": "string",
+              "w9ValidFrom": "string",
+              "w9ValidTo": "string",
+              "withholdingRate": 0,
+              "allAddresses": [
+                {
+                  "addressLine1": "string",
+                  "addressLine2": "string",
+                  "addressLine3": "string",
+                  "addressType": "string",
+                  "city": "string",
+                  "cedex": true,
+                  "cedexBureau": "string",
+                  "description": "string",
+                  "country": "string",
+                  "county": "string",
+                  "province": "string",
+                  "department": 0,
+                  "postalCode": "string",
+                  "state": "string",
+                  "validUntil": "string",
+                  "id": "string"
+                }
+              ],
+              "officialIds": [
+                {
+                  "type": "string",
+                  "value": "string",
+                  "state": "string",
+                  "id": "string"
+                }
+              ],
+              "occupationCd": "string",
+              "occupationDesc": "string"
+            },
+            "driverType": "string",
+            "licenseNumber": "string",
+            "relationshipToInsured": "string",
+            "licenseState": "string",
+            "filingRequired": "string",
+            "filingType": "string",
+            "filingState": "string",
+            "id": "string",
+            "identificationType": "string",
+            "licenseStatus": "string",
+            "violations": [
+              {
+                "accidentViolationType": "string",
+                "date": "string",
+                "dispute": "string",
+                "id": "string"
+              }
+            ],
+            "seniorDriverDiscount": "string",
+            "modifiers": [
+              {
+                "name": "string",
+                "id": "string",
+                "booleanModifier": "string"
+              }
+            ]
+          }
+        ],
+        "modifiers": [
+          {
+            "name": "string",
+            "id": "string",
+            "booleanModifier": "string"
+          }
+        ],
+        "id": "string"
+      }
+    ],
+    "location": {
+      "id": "string",
+      "agencyId": "string",
+      "address": {
+        "addressLine1": "string",
+        "addressLine2": "string",
+        "addressLine3": "string",
+        "addressType": "string",
+        "city": "string",
+        "cedex": true,
+        "cedexBureau": "string",
+        "description": "string",
+        "country": "string",
+        "county": "string",
+        "province": "string",
+        "department": 0,
+        "postalCode": "string",
+        "state": "string",
+        "validUntil": "string",
+        "id": "string"
+      }
+    },
+    "quoteInfo": {
+      "quotePreparedDT": "string",
+      "summaryURL": "string",
+      "bridgeURL": "string"
+    }
+  }
