@@ -8,6 +8,8 @@ REST API — high-level plan, scope and approach
 
 Draft — pending details
 
+> **Contract divergences (added 2026-10-14):** The response contract is contradicted by `ComparatorSchema.json` and the captured responses. See `API Test Plan - Contract Reconciliation.md` (§A divergences, §C decision log).
+
 Note
 
 Scope for now is one endpoint: `POST` create-quote, tested in QA via Postman with OAuth credentials already provisioned in the collection. Requests and responses work end-to-end; what's still open is the client confirming the *correct/expected* response values — see [§12 Open Items](#pending). Everything beyond smoke/functional/negative (§3, marked Planned) is intentionally set aside for now.
