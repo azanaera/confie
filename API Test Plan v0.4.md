@@ -102,10 +102,42 @@ A single environment is provisioned for this phase, tested manually through a Po
 
 ### Environment & tooling map
 
-| Stage | Purpose | Test types run | Notes |
-| --- | --- | --- | --- |
-| QA / UAT | Manual + Postman-driven validation | Smoke, functional, negative | Only environment provisioned so far; label vs URLs unresolved (D4) |
-| PERF / SIT | Isolated load testing | — | Not yet provisioned |
+| Stage | Purpose | Test types run | Client credentials | Notes |
+| --- | --- | --- | --- | --- |
+| DEV | Developer validation | — | **Yes** | Credentials already provisioned |
+| QA | Manual + Postman-driven validation | Smoke, functional, negative | **Yes** | Credentials already provisioned |
+| UAT | Client-facing validation, incl. quote-link → PORTAL visibility (§4.1) | Smoke, functional, negative | TBC | Captured URLs are `uat.trexis.com`; label vs URLs unresolved (D4, Q9) |
+| PERF / SIT | Isolated load testing | — | **Not yet — requested** | Not yet provisioned; client-credentials must be requested (see §4.1) |
+
+### 4.1 Outstanding provisioning & dependencies
+
+- **PERF / SIT client credentials.** Request client credentials for the **PERF / SIT** environment — today credentials exist only for **QA** and **DEV**. Load testing can't be scheduled until they're provisioned.
+
+  | Field | Value |
+  | --- | --- |
+  | Environment needing credentials | PERF / SIT |
+  | Environments that have them today | QA, DEV |
+  | Status | Not yet requested / not provisioned |
+  | Owner | Dev + Client |
+
+- **Producer code per state (Confie).** A producer-code mapping for Confie is required **per state**. The actual codes are **to be determined by Trexis**. This feeds the `producerCode.id` field in `policyInfo` (see §13, TC-16) and gates quote requests that depend on a state-specific producer code.
+
+  | Field | Value |
+  | --- | --- |
+  | Scope | Confie, per state |
+  | Values | **To be determined by Trexis** |
+  | Affects | `policyInfo.producerCode.id` (TC-16) |
+  | Owner | Trexis / Client |
+
+- **Quote-link → PORTAL visibility (UAT).** **To be determined:** after a successful API response, Trexis wants to see the quote in **PORTAL** by following the returned quote link (`quoteInfo.summaryURL` / `bridgeURL`) in the **UAT** environment. The exact mechanism and acceptance criteria are not yet defined; a meeting with **Anetra** is being arranged.
+
+  | Field | Value |
+  | --- | --- |
+  | Requirement | Quote visible in PORTAL via the returned quote link |
+  | Environment | UAT |
+  | Status | **To be determined** — meeting with Anetra being arranged |
+  | Acceptance criteria | Not yet defined |
+  | Owner | You + Trexis |
 
 ## 5. Test Data Strategy
 
@@ -296,8 +328,11 @@ Replaces v0.3's single §12 blocker. Each row is a decision to obtain, with its 
 | Q8 | Is rating deterministic for identical input? | two Confie captures differ | State answer; keep/drop TC-30 (idempotency) | Dev | Open |
 | Q9 | Which environment is authoritative — QA or UAT? | plan says QA; URLs say `uat.trexis.com` | Align label and URLs | You | Open |
 | Q10 | Are `producerInfo` and `location` ever returned? | in spec, absent in all captures | Confirm optional / remove from contract | Dev | Open |
+| Q11 | Can client credentials be provisioned for **PERF / SIT**? | credentials exist only in QA and DEV (§4.1) | Request provisioning before load testing | Dev + Client | Open |
+| Q12 | Producer code per state for Confie — what are the codes? | only `producerCode.id: "139999"` observed (§13, TC-16) | Trexis to supply the per-state mapping | Trexis / Client | Open |
+| Q13 | How is a quote surfaced in **PORTAL** from the returned quote link, in UAT? | Trexis requirement; no mechanism defined (§4.1) | Define mechanism + acceptance criteria; meeting with Anetra being arranged | You + Trexis | Open |
 
-**Resolved so far:** auth model (OAuth, credentials in the Postman collection), tooling (Postman), and endpoint scope (single POST create-quote). Q1–Q10 remain open.
+**Resolved so far:** auth model (OAuth, credentials in the Postman collection), tooling (Postman), and endpoint scope (single POST create-quote). Q1–Q13 remain open.
 
 ## 15. New Test Cases Implied by the Reconciliation
 
