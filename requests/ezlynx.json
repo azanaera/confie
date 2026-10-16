@@ -1,0 +1,324 @@
+{
+    "quoteSource": "EZLynx",
+    "policy": {
+      "insured": {
+        "contactType": "PRIMARY",
+        "firstName": "autoa",
+        "lastName": "abcd",
+        "dateOfBirth": "1985-04-10",
+        "gender": "M",
+        "maritalStatus": "M",
+        "emailAddress1": "unknown@unknown.com",
+        "middleName": "N",
+        "suffix": "III",
+        "prefix": "MR",
+        "taxID": "555-55-5555",
+        "primaryAddress": {
+          "addressLine1": "123 Fake St",
+          "city": "GRIFFITH",
+          "state": "IN",
+          "postalCode": "46319",
+          "country": "US"
+        },
+        "homeOwners_Ext": "Yes",
+        "cellPhone": "555-555-5555"
+      },
+      "coverages": [
+        {
+          "name": "AD",
+          "limit": "5000"
+        }
+      ],
+      "initialPrimaryLocation": {
+        "addressLine1": "123 Fake St",
+        "city": "GRIFFITH",
+        "state": "IN",
+        "postalCode": "46319",
+        "country": "US"
+      },
+      "organizationType": "INDIVIDUAL",
+      "agencyID": "AG-100",
+      "producerCode": {
+        "id": "139999"
+      },
+      "baseState": "IN",
+      "priorInsurance" :"No",
+      "jobEffectiveDate": "2026-08-29T00:00:00Z",
+      "writtenDate": "2026-08-28T00:00:00Z",
+      "docDelMethod": "USPS",
+      "homeOwners_Ext": "Yes"
+    },
+    "drivers": [
+      {
+        "contact": {
+          "dateOfBirth": "1985-04-10",
+          "maritalStatus": "M",
+          "gender": "M",
+          "id": "DRV-1",
+          "firstName": "autoa",
+          "lastName": "abcd",
+          "primaryAddress": {
+            "addressLine1": "123 Fake St",
+            "city": "GRIFFITH",
+            "state": "IN",
+            "postalCode": "46319",
+            "country": "US"
+          }
+        },
+        "driverType": "Principal",
+        "licenseNumber": "1234567",
+        "licenseStatus": "usactive",
+        "licenseState": "CT",
+        "id": "DRV-1",
+        "violations": [
+          {
+            "incidentTypeCode": "ACC",
+            "accidentViolationType": "00001",
+            "isDriverAtFault": true,
+            "occurrenceDate": "2026-08-04T00:00:00",
+            "damageToInsuredProperty": 0,
+            "damageToOtherProperty": 100
+          }
+        ]
+      },
+      {
+        "contact": {
+          "dateOfBirth": "1985-04-10",
+          "maritalStatus": "M",
+          "gender": "F",
+          "id": "DRV-2",
+          "firstName": "jane",
+          "lastName": "doe",
+          "primaryAddress": {
+            "addressLine1": "123 Fake St",
+            "city": "GRIFFITH",
+            "state": "IN",
+            "postalCode": "46319",
+            "country": "US"
+          }
+        },
+        "driverType": "Principal",
+        "licenseNumber": "12345678",
+        "licenseStatus": "usactive",
+        "licenseState": "CT",
+        "id": "DRV-2",
+        "violations": [
+          {
+            "incidentTypeCode": "ACC",
+            "accidentViolationType": "00001",
+            "isDriverAtFault": true,
+            "occurrenceDate": "2026-08-20T00:00:00",
+            "damageToInsuredProperty": 0,
+            "damageToOtherProperty": 0
+          }
+        ]
+      },
+      {
+        "contact": {
+          "dateOfBirth": "1985-04-10",
+          "maritalStatus": "S",
+          "gender": "F",
+          "id": "DRV-3",
+          "firstName": "Joyce",
+          "lastName": "abcd",
+          "primaryAddress": {
+            "addressLine1": "123 Fake St",
+            "city": "GRIFFITH",
+            "state": "IN",
+            "postalCode": "46319",
+            "country": "US"
+          }
+        },
+        "driverType": "Excluded",
+        "licenseNumber": "12345678",
+        "licenseStatus": "USSuspended",
+        "licenseState": "IN",
+        "id": "DRV-3",
+        "violations": []
+      },
+      {
+        "contact": {
+          "dateOfBirth": "1985-04-10",
+          "maritalStatus": "M",
+          "gender": "M",
+          "id": "DRV-4",
+          "firstName": "rishab",
+          "lastName": "doe",
+          "primaryAddress": {
+            "addressLine1": "123 Fake St",
+            "city": "GRIFFITH",
+            "state": "IN",
+            "postalCode": "46319",
+            "country": "US"
+          }
+        },
+        "driverType": "Principal",
+        "licenseNumber": "12345678",
+        "licenseStatus": "usactive",
+        "licenseState": "IN",
+        "id": "DRV-4",
+        "violations": []
+      }
+    ],
+    "vehicles": [
+      {
+        "id": "VEH-2",
+        "make": "AUDI",
+        "model": "A4 PREMIUM",
+        "year": 2010,
+        "vin": "WAUSFAFL4A1111111",
+        "licensePlate": "IN1234",
+        "primaryUse": "BU",
+        "coverage": [
+          {
+            "name": "PD",
+            "limit": "100"
+          },
+          {
+            "limit": "1000",
+            "name": "MEDPM"
+          },
+          {
+            "deductible": "250",
+            "name": "COMP"
+          },
+          {
+            "deductible": "1000",
+            "name": "COLL"
+          },
+          {
+            "limit": "25",
+            "name": "UMPD"
+          },
+          {
+            "limit": "40/1200",
+            "name": "RREIM"
+          },
+          {
+            "limit": "100/300",
+            "name": "UDB"
+          }
+        ]
+      },
+      {
+        "id": "VEH-1",
+        "make": "HONDA",
+        "model": "CIVIC DX",
+        "year": 2006,
+        "vin": "1HGFA162061111111",
+        "licensePlate": "IN1234",
+        "primaryUse": "CS",
+        "grgLoc": {
+          "addressLine1": "123 Fake St",
+          "city": "GRIFFITH",
+          "state": "IN",
+          "postalCode": "46319",
+          "country": "US"
+        },
+        "coverage": [
+          {
+            "name": "PD",
+            "limit": "100"
+          },
+          {
+            "limit": "1000",
+            "name": "MEDPM"
+          },
+          {
+            "deductible": "500",
+            "name": "COMP"
+          },
+          {
+            "deductible": "1000",
+            "name": "COLL"
+          },
+          {
+            "limit": "25",
+            "name": "UMPD"
+          },
+          {
+            "limit": "50/1500",
+            "name": "RREIM"
+          },
+          {
+            "limit": "100/300",
+            "name": "UDB"
+          }
+        ]
+      },
+      {
+        "id": "VEH-3",
+        "make": "AUDI",
+        "model": "A3 E-TRON PREMIUM PLUS ULTRA",
+        "year": 2016,
+        "vin": "WAUUPBFF0GA115364",
+        "licensePlate": "INB235",
+        "primaryUse": "PL",
+        "coverage": [
+          {
+            "name": "PD",
+            "limit": "100"
+          },
+          {
+            "limit": "1000",
+            "name": "MEDPM"
+          },
+          {
+            "deductible": "250",
+            "name": "COMP"
+          },
+          {
+            "deductible": "250",
+            "name": "COLL"
+          },
+          {
+            "limit": "25",
+            "name": "UMPD"
+          },
+          {
+            "limit": "100/300",
+            "name": "UDB"
+          }
+        ]
+      },
+      {
+        "id": "VEH-4",
+        "make": "BMW",
+        "model": "230I",
+        "year": 2023,
+        "vin": "3MW53CM02P8236314",
+        "licensePlate": "INA234",
+        "primaryUse": "PL",
+        "coverage": [
+          {
+            "name": "PD",
+            "limit": "100"
+          },
+          {
+            "limit": "1000",
+            "name": "MEDPM"
+          },
+          {
+            "deductible": "250",
+            "name": "COMP"
+          },
+          {
+            "deductible": "250",
+            "name": "COLL"
+          },
+          {
+            "limit": "25",
+            "name": "UMPD"
+          },
+          {
+            "limit": "30/900",
+            "name": "RREIM"
+          },
+          {
+            "limit": "100/300",
+            "name": "UDB"
+          }
+        ]
+      }
+    ]
+  }

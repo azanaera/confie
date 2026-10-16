@@ -46,7 +46,21 @@ _Why this matters: the spec's `authorizationCode` flow points at Guidewire-hoste
 
 ### Q11 — Can client credentials be provisioned for PERF / SIT?
 
-_Why this matters: performance/load testing is blocked — credentials exist only for QA and DEV._
+_Why this matters: performance/load testing is blocked — credentials exist only in QA and DEV._
+
+>
+
+## Coverage mapping (Confie → GW)
+
+### Q17 — How do GW coverage codes surface in downstream reporting?
+
+_Why this matters: the Confie requirement depends on the mapped codes being consumed by reporting, but the report shape and mechanism are undefined. Gates TC-60/TC-61._
+
+>
+
+### Q18 — When is `RREIM` (`TPARNTCov`) enabled?
+
+_Why this matters: `RREIM` is release-gated, so TC-43/TC-55 can't run until the code is live._
 
 >
 

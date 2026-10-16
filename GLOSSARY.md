@@ -16,6 +16,10 @@ _Avoid_: quote service, rating engine
 An upstream rater that submits quote requests to the comparator; identified in a response by `parentQuote: "Confie"`.
 _Avoid_: client, agency
 
+**comp rater**:
+An upstream rater (Confie, PLRating) that submits quote requests to the comparator and is identified in a response by `parentQuote`.
+_Avoid_: vendor, provider
+
 **PLRating**:
 An upstream rater, distinct from Confie; identified in a response by `parentQuote: "PLRating"`.
 
@@ -46,6 +50,14 @@ _Avoid_: payment plan
 **producerCode**:
 The producer/agency code carried on the request and echoed at `policyInfo.producerCode.id`; required per state.
 _Avoid_: producer, agency code
+
+**coverage code mapping**:
+The translation of a Confie coverage code (e.g. `BI`) to the GW code used for rating and downstream reporting (e.g. `TPABICov`).
+_Avoid_: code conversion, alias
+
+**GW code**:
+The Guidewire coverage code (`TPABICov`, `TPAPDCov`, …) that a Confie coverage code maps to. Not returned to the caller; used for rating and downstream reporting.
+_Avoid_: internal code, TPA code
 
 **msgStatus**:
 The top-level quote status string; only `quoted` has been observed.

@@ -4,6 +4,8 @@ Quality Engineering · Test Planning
 
 REST API — high-level plan, scope and approach
 
+> **Superseded by [`API Test Plan v1.0.md`](./API%20Test%20Plan%20v1.0.md) (16 October 2026).** Retained for history.
+
 - **Target system:** Quote creation endpoint — `POST /trexis/comparator/quote` (`operationId: compositeQuoteAPI`)
 - **Version:** 0.5 — single-endpoint focus; contract reconciled, decisions closed
 - **Date:** 15 October 2026

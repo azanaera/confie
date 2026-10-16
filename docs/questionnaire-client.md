@@ -62,6 +62,32 @@ _Why this matters: Trexis expects the quote to be visible in PORTAL after a resp
 
 >
 
+## Coverage mapping (Confie → GW)
+
+### Q14 — Confie codes `AD`, `UDB`, `UIM`.
+
+_Why this matters: these appear in the legacy sample requests but not in the Confie code list. We've treated them as outdated other-vendor codes and deferred them. Confirm they are out of scope for Confie._
+
+>
+
+### Q15 — Canonical names for `UMBI` and `TL`.
+
+_Why this matters: no capture shows `Uninsured Motorist Bodily Injury` (uninsured) or `Towing & Labor`; we need the exact response names before TC-41/TC-42 can pass._
+
+>
+
+### Q16 — Unknown/unmapped coverage code behaviour.
+
+_Why this matters: we don't know whether an unknown code is rejected or silently ignored, nor what `errorresponse` contains (ties to Q4). Drives TC-54._
+
+>
+
+### Q17 — Downstream reporting contract.
+
+_Why this matters: the requirement says the GW coverage codes feed downstream reporting, but we have no report shape or acceptance criterion. Gates TC-60/TC-61._
+
+>
+
 ## Anything else?
 
 _Anything we didn't ask that we should know?_

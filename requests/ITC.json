@@ -1,0 +1,99 @@
+{
+    "quoteSource": "ITC",
+    "policy": {
+        "agencyID": "AG-100",
+        "baseState": "IN",
+        "initialPrimaryLocation": {
+            "addressLine1": "123 Main St",
+            "city": "INDIANAPOLIS",
+            "country": "US",
+            "postalCode": "46201",
+            "state": "IN"
+        },
+        "insured": {
+            "cellPhone": "(917) 812-9951",
+            "contactType": "PRIMARY",
+            "dateOfBirth": "2001-06-26",
+            "emailAddress1": "khmi@zywave.com",
+            "firstName": "John",
+            "gender": "M",
+            "id": "insured1",
+            "lastName": "Smith",
+            "maritalStatus": "S",
+            "primaryAddress": {
+                "addressLine1": "123 Main St",
+                "city": "INDIANAPOLIS",
+                "country": "US",
+                "postalCode": "46201",
+                "state": "IN"
+            }
+        },
+        "jobEffectiveDate": "2026-07-26T00:00:00Z",
+        "jobExpirationDate": "2027-07-26T00:00:00Z",
+        "organizationType": "INDIVIDUAL",
+        "producerCode": {
+            "id": "139999"
+        },
+        "termType": "Annual",
+        "writtenDate": "2026-07-22T00:00:00Z"
+    },
+    "drivers": [
+        {
+            "contact": {
+                "contactType": "PRIMARY",
+                "dateOfBirth": "2001-06-26",
+                "firstName": "John",
+                "gender": "M",
+                "id": "driverContact1",
+                "lastName": "Smith",
+                "maritalStatus": "S",
+                "primaryAddress": {
+                    "addressLine1": "123 Main St",
+                    "city": "INDIANAPOLIS",
+                    "country": "US",
+                    "postalCode": "46201",
+                    "state": "IN"
+                },
+                "relationshipToInsured": "Self"
+            },
+            "driverType": "Principal",
+            "filingRequired": "yes",
+            "filingState": "IN",
+            "filingType": "sr22",
+            "id": "driver1",
+            "licenseNumber": "IN1234567",
+            "licenseState": "IN",
+            "licenseStatus": "usactive"
+        }
+    ],
+    "vehicles": [
+        {
+            "antiTheft": "true",
+            "bodyType": "Midsz4Dr",
+            "country": "US",
+            "coverage": [
+                {
+                    "limit": "25/50",
+                    "name": "BI"
+                },
+                {
+                    "limit": "25",
+                    "name": "PD"
+                }
+            ],
+            "grgLoc": {
+                "addressLine1": "123 Main St",
+                "city": "INDIANAPOLIS",
+                "country": "US",
+                "postalCode": "46201",
+                "state": "IN"
+            },
+            "id": "vehicle1",
+            "make": "TOYOTA",
+            "model": "CAMRY XSE",
+            "state": "IN",
+            "vin": "4T1K31AK1MU024002",
+            "year": 2021
+        }
+    ]
+}
